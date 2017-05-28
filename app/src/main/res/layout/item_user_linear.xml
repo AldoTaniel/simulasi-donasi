@@ -15,7 +15,6 @@
             android:layout_margin="8dp"
             android:padding="8dp"
             android:id="@+id/item.user.linear.image"
-            android:src="@drawable/user"
             android:layout_height="80dp" />
         <LinearLayout
             android:layout_width="match_parent"

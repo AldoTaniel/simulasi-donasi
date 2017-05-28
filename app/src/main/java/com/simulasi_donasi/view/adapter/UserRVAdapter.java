@@ -1,5 +1,6 @@
 package com.simulasi_donasi.view.adapter;
 
+import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.simulasi_donasi.R;
+import com.simulasi_donasi.model.entity.Data;
 import com.simulasi_donasi.model.entity.User;
 import com.simulasi_donasi.model.session.SessionManager;
 
@@ -20,16 +22,16 @@ import java.util.List;
 
 public class UserRVAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
-    private List<User> users;
-    public List<User> getUsers() {
-        return users;
+    private List<Data> datas;
+    public List<Data> getDatas() {
+        return datas;
     }
-    public void setUsers(List<User> users) {
-        this.users = users;
+    public void setDatas(List<Data> datas) {
+        this.datas = datas;
     }
 
     public UserRVAdapter() {
-        this.users = new ArrayList<>();
+        this.datas = new ArrayList<>();
     }
 
     @Override
@@ -41,14 +43,15 @@ public class UserRVAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder>
     @Override
     public void onBindViewHolder(RecyclerView.ViewHolder holder, int position) {
         final ItemUserViewHolder _holder = (ItemUserViewHolder) holder;
-        final User _user = this.users.get(position);
-        _holder.name.setText(_user.getName());
-        _holder.email.setText(_user.getEmail());
+        final Data _data = this.datas.get(position);
+        _holder.image.setImageResource(_data.getImg());
+        _holder.name.setText(_data.getName());
+        _holder.email.setText(_data.getBio());
     }
 
     @Override
     public int getItemCount() {
-        return users.size();
+        return datas.size();
     }
 
     private class ItemUserViewHolder extends RecyclerView.ViewHolder {

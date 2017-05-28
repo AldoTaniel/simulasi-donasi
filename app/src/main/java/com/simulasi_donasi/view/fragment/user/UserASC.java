@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.simulasi_donasi.R;
-import com.simulasi_donasi.model.entity.User;
+import com.simulasi_donasi.model.entity.Data;
 import com.simulasi_donasi.view.adapter.UserRVAdapter;
 
 /**
@@ -40,7 +40,7 @@ public class UserASC extends Fragment {
         /* setting */
         rv.setHasFixedSize(true);
         rv.setLayoutManager(new LinearLayoutManager(getContext()));
-        adapter.setUsers(User.users);
+        adapter.setDatas(Data.datas);
         rv.setAdapter(adapter);
         return _view;
     }

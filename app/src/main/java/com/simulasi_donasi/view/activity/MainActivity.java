@@ -6,6 +6,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 import com.simulasi_donasi.R;
+import com.simulasi_donasi.model.entity.Data;
 import com.simulasi_donasi.model.entity.User;
 import com.simulasi_donasi.model.session.SessionManager;
 import com.simulasi_donasi.view.fragment.user.UserASC;
@@ -18,6 +19,7 @@ public class MainActivity extends ParentActivity {
         setContentView(R.layout.activity_main);
 
         User.users.clear();
+        Data.datas.clear();
         User a = new User("STMIK - Mikroskil Medan", "a@mobile.id", "password");
         User b = new User("Kampus A", "b@mobile.id", "password");
         User c = new User("Kampus B", "c@mobile.id", "password");
@@ -42,6 +44,34 @@ public class MainActivity extends ParentActivity {
         User.users.add(j);
         User.users.add(k);
         User.users.add(l);
+
+        Data da = new Data("Sumbangan untuk korban gempa bumi","blablablablablablablablablabla",10000000);
+        da.setImg(R.drawable.gempa);
+        Data db = new Data("Sumbangan untuk korban banjir","blablablablablablablabla",15000000);
+        db.setImg(R.drawable.banjir);
+        Data dc = new Data("Sumbangan untuk korban tsunami","blablablablablablabla",25000000);
+        dc.setImg(R.drawable.tsunami);
+        Data dd = new Data("Sumbangan untuk korban gempa bumi","blablablablablablablablablabla",10000000);
+        dd.setImg(R.drawable.gempa);
+        Data de = new Data("Sumbangan untuk korban banjir","blablablablablablablabla",15000000);
+        de.setImg(R.drawable.banjir);
+        Data df = new Data("Sumbangan untuk korban tsunami","blablablablablablabla",25000000);
+        df.setImg(R.drawable.tsunami);
+        Data dg = new Data("Sumbangan untuk korban gempa bumi","blablablablablablablablablabla",10000000);
+        dg.setImg(R.drawable.gempa);
+        Data dh = new Data("Sumbangan untuk korban banjir","blablablablablablablabla",15000000);
+        dh.setImg(R.drawable.banjir);
+        Data di = new Data("Sumbangan untuk korban tsunami","blablablablablablabla",25000000);
+        di.setImg(R.drawable.tsunami);
+        Data.datas.add(da);
+        Data.datas.add(db);
+        Data.datas.add(dc);
+        Data.datas.add(dd);
+        Data.datas.add(de);
+        Data.datas.add(df);
+        Data.datas.add(dg);
+        Data.datas.add(dh);
+        Data.datas.add(di);
 
              /* checking the session */
         if (!SessionManager.with(getApplicationContext()).isuserlogin()) {
