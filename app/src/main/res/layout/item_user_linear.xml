@@ -35,8 +35,8 @@
                 android:layout_height="match_parent"
                 android:textSize="12sp"
                 android:gravity="right"
-                android:id="@+id/item.user.linear.email"
-                android:text="Nama Donasi"/>
+                android:id="@+id/item.user.linear.amount"
+                android:text="Jumlah donasi"/>
         </LinearLayout>
     </LinearLayout>
 

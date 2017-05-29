@@ -1,6 +1,7 @@
 package com.simulasi_donasi.model.entity;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 /**
  * Created by Macdoze on 28-May-17.
@@ -60,4 +61,5 @@ public class Data {
     public void setAmount(int amount){
         this.amount=amount;
     }
+
 }
