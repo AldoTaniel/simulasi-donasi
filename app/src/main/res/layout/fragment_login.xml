@@ -45,7 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Have no account? REGISTER NOW!!!"
+        android:text="No Account? Come join us, Register Here!"
         android:textColor="#2E7D32"
         android:paddingTop="16dp"
         android:paddingBottom="16dp"

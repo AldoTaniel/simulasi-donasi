@@ -77,7 +77,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
-        android:text="Already have an account? LOGIN NOW!!!"
+        android:text="Already have an account? Let's LogIn!"
         android:textColor="#2E7D32"
         android:paddingTop="16dp"
         android:paddingBottom="16dp"
